@@ -107,7 +107,7 @@ This repo is one hook. The paid pack adds the other two and the tooling around t
 
 - **`block-dangerous-commands.ps1`** — force push, hard reset, `git clean -f`, `rm -rf` on home or root, pipe-to-shell, drive formats, `DROP DATABASE`, `chmod -R 777`. Matched on `Bash|PowerShell`, per Trap 1.
 - **`audit-log.ps1`** — one JSON line per `Bash`, `PowerShell`, `Edit` or `Write` call to `.claude/logs/audit.jsonl`, with secrets redacted.
-- Two subagents (a read-only `reviewer` that cannot edit files, and a `test-runner` that won't weaken tests to make them pass), two skills (`/safe-commit`, which never pushes, and `/hook-check`), a Windows `CLAUDE.md` template, an installer that backs up anything it replaces, and a **65-case** self-test — 12 of whose cases check the `settings.json` wiring, for exactly the reason in Trap 1.
+- Two subagents (a read-only `reviewer` that cannot edit files, and a `test-runner` that won't weaken tests to make them pass), two skills (`/safe-commit`, which never pushes, and `/hook-check`), a Windows `CLAUDE.md` template, an installer that backs up anything it replaces, and a **65-case** self-test — 14 of whose cases check the `settings.json` wiring, for exactly the reason in Trap 1.
 
 $29, one-time: **https://maxibee4.gumroad.com/l/claude-code-windows-guardrails**
 
